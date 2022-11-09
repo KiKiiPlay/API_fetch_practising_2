@@ -15,7 +15,7 @@ const generateFirstPic = function () {
       for (let i = 0; i < changePic.length; i++) {
         changePic[i].innerHTML = `
       <div class="card mb-4 shadow-sm img_change">
-                <img src="${dog.url}" alt="..." />
+      <img src="${dog.photos[i].src.small}" alt="..." />
                 <div class="card-body">
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
@@ -61,7 +61,7 @@ const generateSecondaryPic = function () {
       for (let i = 0; i < changePic.length; i++) {
         changePic[i].innerHTML = `
       <div class="card mb-4 shadow-sm img_change">
-                <img src="${cat.url}" alt="..." />
+      <img src="${cat.photos[i].src.small}" alt="..." />
                 <div class="card-body">
                   <p class="card-text">
                     This is a wider card with supporting text below as a natural
